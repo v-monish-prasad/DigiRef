@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalRef</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section style="height: 650px; overflow-y: auto;" id="table">
+         <table class="booksList">
+            <thead>
+                <tr>
+                    <th style="border: none;">
+                        
+                    </th>
+                    <th style="border: none;">
+                        <input type="text" id="search-input" placeholder="Search" class="searchBar">
+                    </th>
+                    <th style="border: none;">
+                        <button id="search-btn" class="searchBtn">
+                            <img src="assets\search.svg" alt="">
+                        </button>
+                    </th>
+                    <th style="border: none;">
+                        <p id="count" style="color: white"></p>
+                    </th>
+                    <th style="border: none; padding: 0; margin-bottom: 20px;">
+                        <button id="clear-btn" class="clrBtn">Clear</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="thId1" style="background-color: #D9D9D9;">
+                        
+                    </th>
+                    <th>
+                        <select id="title">
+                            <option value="" class="optionsHead">Filter Title</option>
+                        </select>
+                    </th>
+                    <th class="selectHead">
+                        <select id="author">
+                            <option value="" class="optionsHead">Filter Author</option>
+                        </select>
+                    </th>
+                    <th class="selectHead">
+                        <select id="subject">
+                            <option value="" class="optionsHead">Filter Subject</option>
+                        </select>
+                    </th>
+                    <th class="selectHead">
+                        <select id="publish-date">
+                            <option value="" class="optionsHead">Filter Publish Date</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr class="tableHead">
+                    <th class="thId">
+                        Book ID
+                    </th>
+                    <th class="thId">
+                        Title
+                    </th>
+                    <th class="thId">
+                        Author
+                    </th>
+                    <th class="thId">
+                        Subject
+                    </th>
+                    <th class="thId">
+                        Publish Date
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+    </table>   
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

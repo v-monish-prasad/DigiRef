@@ -1,0 +1,422 @@
+[
+        {
+            "id": 1,
+            "title": "Steve Jobs",
+            "author": "Walter Issacson",
+            "subject": "Biography",
+            "publication_date": "06-10-1994"
+          },
+          {
+            "id": 2,
+            "title": "Discovery of India",
+            "author": "Jawaharlal Nehru",
+            "subject": "History",
+            "publication_date": "28-03-1989"
+          },
+          {
+            "id": 3,
+            "title": "My Experiments with Truth",
+            "author": "Mahatma Gandhi",
+            "subject": "Autobiography",
+            "publication_date": "23-12-1997"
+          },
+          {
+            "id": 4,
+            "title": "Object Oriented Programming with C++",
+            "author": "E Balagurusamy",
+            "subject": "Education",
+            "publication_date": "01-05-1983"
+          },
+          {
+            "id": 5,
+            "title": "Thinking with type",
+            "author": "Ellen Lupton",
+            "subject": "Arts",
+            "publication_date": "12-09-1993"
+          },
+          {
+            "id": 6,
+            "title": "The Photographer's",
+            "author": "Lindsay Adler",
+            "subject": "Photography",
+            "publication_date": "24-08-1998"
+          },
+          {
+            "id": 7,
+            "title": "Think and Grow",
+            "author": "Napoleon Hill",
+            "subject": "Economics",
+            "publication_date": "11-04-1982"
+          },
+          {
+            "id": 8,
+            "title": "The Fifth Discipline : The Art",
+            "author": "Peter M.Senge",
+            "subject": "Management",
+            "publication_date": "19-11-2002"
+          },
+          {
+            "id": 9,
+            "title": "A Theory of Justice",
+            "author": "John Rawls",
+            "subject": "Law",
+            "publication_date": "21-01-1986"
+          },
+          {
+            "id": 10,
+            "title": "Eat to Live",
+            "author": "Joel Fuhrman",
+            "subject": "Health",
+            "publication_date": "05-02-2005"
+          },
+          {
+            "id": 11,
+            "title": "City of Heavenly Fire",
+            "author": "Cassandra Clare",
+            "subject": "Mythology",
+            "publication_date": "14-12-1987"
+          },
+          {
+            "id": 12,
+            "title": "Da Vinci Code",
+            "author": "Dan Brown",
+            "subject": "Sci-Fi",
+            "publication_date": "07-10-2013"
+          },
+          {
+            "id": 13,
+            "title": "War and Peace",
+            "author": "Leo Tolstoy",
+            "subject": "Philosophical Novel",
+            "publication_date": "18-06-2000"
+          },
+          {
+            "id": 14,
+            "title": "Python For All",
+            "author": "John Shovic",
+            "subject": "Education",
+            "publication_date": "22-01-2011"
+          },
+          {
+            "id": 15,
+            "title": "Automate The Boring Stuff With Python",
+            "author": "Al Sweigart",
+            "subject": "Education",
+            "publication_date": "16-08-2008"
+          },
+          {
+            "id": 16,
+            "title": "Wings Of Fire",
+            "author": "APJ Abdul Kalam",
+            "subject": "AutoStory",
+            "publication_date": "31-08-1985"
+          },
+          {
+            "id": 17,
+            "title": "Ikigai",
+            "author": "Hector Garcia",
+            "subject": "Personal Development",
+            "publication_date": "16-09-1990"
+          },
+          {
+            "id": 18,
+            "title": "Who Will Cry When You Will Die",
+            "author": "Robin Sharma",
+            "subject": "Personal Development",
+            "publication_date": "06-05-1995"
+          },
+          {
+            "id": 19,
+            "title": "Rich Dad Poor Dad",
+            "author": "Robert T. Kiyosaki",
+            "subject": "Business",
+            "publication_date": "12-04-2016"
+          },
+          {
+            "id": 20,
+            "title": "Immortals of Meluha",
+            "author": "Amish Tirpathi",
+            "subject": "High Fantasy",
+            "publication_date": "07-11-1989"
+          },
+          {
+            "id": 21,
+            "title": "A Brief History Of Time",
+            "author": "Stephen Hawking",
+            "subject": "SPACE",
+            "publication_date": "23-07-1997"
+          },
+          {
+            "id": 22,
+            "title": "I Know Why The Cage Bird Sings",
+            "author": "Maya Anguelo",
+            "subject": "Story",
+            "publication_date": "31-10-2018"
+          },
+          {
+            "id": 23,
+            "title": "Lord Of Files",
+            "author": "William Golding",
+            "subject": "Fiction",
+            "publication_date": "29-09-1996"
+          },
+          {
+            "id": 24,
+            "title": "Loara Dune",
+            "author": "R. D Blackmore",
+            "subject": "Fiction",
+            "publication_date": "08-04-2008"
+          },
+          {
+            "id": 25,
+            "title": "Jamacia Inn",
+            "author": "Daphne",
+            "subject": "Sci-Fi",
+            "publication_date": "09-08-1982"
+          },
+          {
+            "id": 26,
+            "title": "Kidnapped",
+            "author": "Robert Louis",
+            "subject": "Novel",
+            "publication_date": "18-03-2015"
+          },
+          {
+            "id": 27,
+            "title": "Treasure Island",
+            "author": "Robert Louis",
+            "subject": "Sci-Fi",
+            "publication_date": "12-08-1994"
+          },
+          {
+            "id": 28,
+            "title": "The Call Of Wild",
+            "author": "Jack London",
+            "subject": "Fiction",
+            "publication_date": "10-12-2001"
+          },
+          {
+            "id": 29,
+            "title": "Charlottes Web",
+            "author": "E. B White",
+            "subject": "Comic Fiction",
+            "publication_date": "02-09-2007"
+          },
+          {
+            "id": 30,
+            "title": "The Wind In Willows",
+            "author": "Kenneth Grahame",
+            "subject": "Novel",
+            "publication_date": "17-07-1984"
+          },
+          {
+            "id": 31,
+            "title": "Being and Time",
+            "author": "Martin Heldegger",
+            "subject": "Philosophy",
+            "publication_date": "02-01-2004"
+          },
+          {
+            "id": 32,
+            "title": "The Republic",
+            "author": "Rocha Pereia",
+            "subject": "Philosophy",
+            "publication_date": "21-06-2010"
+          },
+          {
+            "id": 33,
+            "title": "Critique For Pure Reason",
+            "author": "Paul Guyer",
+            "subject": "Philosophy",
+            "publication_date": "14-07-2003"
+          },
+          {
+            "id": 34,
+            "title": "The Prince",
+            "author": "Rufus Godwin",
+            "subject": "Philosophy",
+            "publication_date": "13-06-1981"
+          },
+          {
+            "id": 35,
+            "title": "Ethics",
+            "author": "Stuart Hampshire",
+            "subject": "Philosophy",
+            "publication_date": "20-05-2012"
+          },
+          {
+            "id": 36,
+            "title": "Long Walk To Freedom",
+            "author": "Nelson Mandela",
+            "subject": "Autobiography",
+            "publication_date": "06-03-2017"
+          },
+          {
+            "id": 37,
+            "title": "The Dairy Of Young Girl",
+            "author": "Anne Frank",
+            "subject": "AutoStory",
+            "publication_date": "19-02-2014"
+          },
+          {
+            "id": 38,
+            "title": "Mark Twain",
+            "author": "Mark Twain",
+            "subject": "Autobiography",
+            "publication_date": "25-04-1991"
+          },
+          {
+            "id": 39,
+            "title": "Mein Kampf",
+            "author": "Adolf Hitler",
+            "subject": "Autobiography",
+            "publication_date": "15-03-1999"
+          },
+          {
+            "id": 40,
+            "title": "Freakonomics",
+            "author": "Steveb D.Levit",
+            "subject": "Economics",
+            "publication_date": "04-11-2009"
+          },
+          {
+            "id": 41,
+            "title": "Thinking Fast and Slow",
+            "author": "Daniel Kahneman",
+            "subject": "Economics",
+            "publication_date": "26-08-1992"
+          },
+          {
+            "id": 42,
+            "title": "Tell You About Capitalism",
+            "author": "HA-Joon Chang",
+            "subject": "Economics",
+            "publication_date": "01-02-1998"
+          },
+          {
+            "id": 43,
+            "title": "Animal Spirits",
+            "author": "Akerlof and Shiller",
+            "subject": "Economics",
+            "publication_date": "02-09-1980"
+          },
+          {
+            "id": 44,
+            "title": "The Black Swan",
+            "author": "Nassim Nicholas Taleb",
+            "subject": "Economics",
+            "publication_date": "29-12-2006"
+          },
+          {
+            "id": 45,
+            "title": "The Lord Of Wings ",
+            "author": "J.R.R.Tolken",
+            "subject": "Story",
+            "publication_date": "07-06-2005"
+          },
+          {
+            "id": 46,
+            "title": "Kite Runner",
+            "author": "Khaled Hosseini",
+            "subject": "Story",
+            "publication_date": "28-11-1986"
+          },
+          {
+            "id": 47,
+            "title": "Harry Potter",
+            "author": "J.K.Rowling",
+            "subject": "Story",
+            "publication_date": "08-01-2018"
+          },
+          {
+            "id": 48,
+            "title": "The Book Theif",
+            "author": "Markus Zusak",
+            "subject": "Story",
+            "publication_date": "06-07-1987"
+          },
+          {
+            "id": 49,
+            "title": "History Of 20th Century",
+            "author": "Martin Gilbert",
+            "subject": "History",
+            "publication_date": "30-11-1995"
+          },
+          {
+            "id": 50,
+            "title": "Guns,Germs,and Steel",
+            "author": "Jared Daimond",
+            "subject": "History",
+            "publication_date": "28-10-2016"
+          },
+          {
+            "id": 51,
+            "title": "A World lit Only by Fire",
+            "author": "William Manchestar",
+            "subject": "History",
+            "publication_date": "03-09-2002"
+          },
+          {
+            "id": 52,
+            "title": "The Crusades ",
+            "author": "Thomas Asbridge",
+            "subject": "History",
+            "publication_date": "11-10-1985"
+          },
+          {
+            "id": 53,
+            "title": "Over The Edge Of The World",
+            "author": "Laurence",
+            "subject": "History",
+            "publication_date": "27-03-2000"
+          },
+          {
+            "id": 54,
+            "title": "A Beautiful Mind ",
+            "author": "Sylvia Nasar",
+            "subject": "Biography",
+            "publication_date": "17-01-1993"
+          },
+          {
+            "id": 55,
+            "title": "The Enigma",
+            "author": "Andrew Hodges",
+            "subject": "Biography",
+            "publication_date": "15-05-1996"
+          },
+          {
+            "id": 56,
+            "title": "Alexander Hamilton",
+            "author": "Ron Chernow",
+            "subject": "Story",
+            "publication_date": "11-05-2013"
+          },
+          {
+            "id": 57,
+            "title": "Barracoon",
+            "author": "Zora Neale Hurston",
+            "subject": "Biography",
+            "publication_date": "01-06-2019"
+          },
+          {
+            "id": 58,
+            "title": "CHURCHILL : A Life",
+            "author": "MArtin Glibert",
+            "subject": "Biography",
+            "publication_date": "13-01-1981"
+          },
+          {
+            "id": 59,
+            "title": "A Tale of Two Cities",
+            "author": "Charles Dickens",
+            "subject": "Historical novel",
+            "publication_date": "17-12-2011"
+          },
+          {
+            "id": 60,
+            "title": "Les Misérables",
+            "author": "Victor Hugo",
+            "subject": "Historical Mythology",
+            "publication_date": "24-02-2006"
+          }
+]

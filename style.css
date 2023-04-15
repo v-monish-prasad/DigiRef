@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #36393E;
+}
+
+#table {
+    margin: 5%;
+}
+
+.tableDiv {
+    margin: 5% auto;
+}
+
+.optionsHead {
+    text-align: center;
+}
+
+select {
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border: none;
+    color: #36393E;
+    padding: 1rem 0.1rem;
+    background-color: #D9D9D9;
+}
+
+select:hover {
+    border: 1px solid;
+    color: #36393E;
+    background-color: #D9D9D9;
+    opacity: 0.7;
+}
+
+option {
+    text-align: left;
+    border: none;
+}
+
+.searchBar {
+    width: 120.5%;
+    height: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #D9D9D9;
+    color: #36393E;
+    opacity: 0.8;
+}
+
+.searchBtn {
+    width: 17%;
+    height: 100%;
+    padding: 0.48rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #D9D9D9;
+    color: #36393E;
+    font-weight: 750;
+}
+
+.clrBtn {
+    width: 100%;
+    height: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    color: #36393E;
+    font-weight: 750;
+    text-transform: uppercase;
+}
+
+.clrBtn:hover {
+    border: 1px solid;
+    color: #36393E;
+    background-color: #D9D9D9;
+    opacity: 0.7;
+}
+
+.booksList {
+    margin: 1% auto;
+    border-collapse: collapse; /*to merge adjacent borders*/
+}
+
+td {
+    font-weight: 600;
+}
+
+.thId {
+    text-transform: uppercase;
+    
+}
+
+.thId, td {
+    border: 1px solid;
+    padding: 1rem;
+    color: #D9D9D9;
+}
+
+.thId:hover, td:hover {
+    border: 1px solid;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #36393E;
+    background-color: #D9D9D9;
+    opacity: 0.7;
+}
+
+.tableHead {
+    position: sticky;
+}
+
+/*filterDiv*/
+
+.filterDiv {
+    margin: 10% auto 0 auto;
+    display: flex;
+    justify-content: end;
+}
