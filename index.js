@@ -70,10 +70,8 @@ document.getElementById("search-btn").addEventListener("click", () => {
 
 // Add an event listener to the search input field to handle Enter key press
 document.getElementById("search-input").addEventListener("keyup", (event) => {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    document.getElementById("search-btn").click();
-  }
+  event.preventDefault();
+  document.getElementById("search-btn").click();
 });
 
 
