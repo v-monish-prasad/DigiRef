@@ -29,8 +29,8 @@
         </div>
 
         <div class="navOptions1" id="navOptions">
-            <a href="#" class="navOption1">Home</a>
-            <a href="#" class="navOption1">About Us</a>
+            <a href="#hero" class="navOption1">Home</a>
+            <a href="#about" class="navOption1">About Us</a>
             <a href="#" class="navOption1">Contact Us</a>   
             <button class="register1" id="download">
                 <span class="btnTxt"><span class="regisTxt">Premium</span></span>
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <div class="hero">
+    <div class="hero" id="hero">
         <div class="heroTxt">
             <h1 class="heroTxtHead">Digi<span class="heroTxtSpan">Ref</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facere reprehenderit dolorem excepturi vitae? Rem soluta vel quos exercitationem neque veniam suscipit? Officia consequatur at ab deserunt ducimus hic omnis.</p>
@@ -77,32 +77,6 @@
         <p id="count" class="count">Displaying 60/60 books</p>
         <button id="clear-btn" class="clrBtn">Clear</button>
     </div>
-
-    <!-- <div style="height: 600px; overflow-y: auto;" id="table">
-        <table class="booksList">
-            <thead>
-                <tr>
-                    <th class="thId">
-                        Book ID
-                    </th>
-                    <th class="thId">
-                        Title
-                    </th>
-                    <th class="thId">
-                        Author
-                    </th>
-                    <th class="thId">
-                        Subject
-                    </th>
-                    <th class="thId">
-                        Publish Date
-                    </th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-            </tbody>
-        </table>
-    </div> -->
 
     <div class="table-container" style="height: 500px; overflow-y: auto;" id="table">
         <table class="booksList">
@@ -191,8 +165,27 @@
         </div> 
     </div>
       
-    
+    <div class="about" id="about">
+        <img src="assets\aboutBg.svg" alt="" class="aboutBg">
+        <h1>What we actually do?</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, tempore sapiente. Laboriosam alias quos eos cupiditate officia aspernatur voluptas neque tempora minima quisquam temporibus, enim, sapiente officiis, optio nulla maiores!
+        Impedit, accusantium ipsa? Deserunt dolorem et praesentium expedita consequuntur quibusdam nisi quam consectetur! Corporis earum vitae, iure reprehenderit error itaque, ipsum nobis cumque officia fugit iusto aspernatur assumenda saepe distinctio!
+        Enim aut temporibus minima veritatis autem, culpa saepe deleniti minus impedit voluptate non corrupti dolores, sunt laborum consequatur facilis, reprehenderit tempora quam quo ipsam! Tempore laboriosam ea fuga unde officia?</p>
+    </div>
 
+    <div class="footer" id="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125042.34611177735!2d78.05589529644715!3d11.653723377514261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1681654223802!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        <div class="enquiryForm">
+            <form action="mailto:srivvp2002@gmai.com" method="post" enctype="text/plain">
+                <input type="text" placeholder="Name" name="name" class="inputBar">
+                <input type="email" placeholder="Email" name="email" class="inputBar">
+                <textarea name="message" cols="20" rows="5" placeholder="Message" class="inputBar"></textarea>
+        
+                <button type="submit" class="submitBtn">Send Message</button>
+            </form>
+        </div>
+        
+    </div>
 
     <script src="index.js"></script>
 </body>
