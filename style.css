@@ -11,12 +11,16 @@ a {
     text-decoration: none;
 }
 
+table
+
 #table {
-    margin: 0% auto 15% auto    ;
+    margin: 0% auto 15% auto;
     width: 80%;
+    border-radius: 15px;
 }
 
 #table::-webkit-scrollbar {
+    height: 80%;
     width: 5px;
   }
   
@@ -33,6 +37,51 @@ a {
   #table::-webkit-scrollbar-thumb:hover {
     background: #ff0066;
   }
+
+/* table */
+.table-container {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    margin-bottom: 15%;
+  }
+  
+  .booksList {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .booksList thead {
+    background-color: #ff418d;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .booksList th,
+  .booksList td {
+    padding: 12px 15px;
+  }
+  
+  .booksList tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .booksList tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  .booksList tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  .booksList tbody tr:hover {
+    background-color: #ffeaf2;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
   
 
 /* navbar starts */
@@ -247,7 +296,6 @@ td {
 
 .thId, td {
     border: 1px solid;
-    padding: 1rem;
 }
 
 .thId:hover, td:hover {

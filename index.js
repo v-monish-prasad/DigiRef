@@ -106,8 +106,6 @@ function renderTable1(data) {
 var table = document.getElementById('table');
 
 table.addEventListener('scroll', () => {
-  console.log('scroll')
-  console.log(globalFlag, table.scrollTop, table.clientHeight, table.scrollHeight)
   if (globalFlag == true && table.scrollTop + table.clientHeight >= table.scrollHeight - 1) {
     console.log('if works')
     // fetch more data and render the table
