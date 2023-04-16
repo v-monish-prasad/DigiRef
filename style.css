@@ -1,96 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: #36393E;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 #table {
-    margin: 5%;
+    margin: 0% 5% 15% 5%;
 }
 
-.tableDiv {
-    margin: 5% auto;
+#table::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  #table::-webkit-scrollbar-track {
+    background: #dedede;
+    border-radius: 50px;
+  }
+  
+  #table::-webkit-scrollbar-thumb {
+    background: #ff418d;
+    border-radius: 50px;
+  }
+  
+  #table::-webkit-scrollbar-thumb:hover {
+    background: #ff0066;
+  }
+  
+
+/* navbar starts */
+
+.nav {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid;
 }
 
-.optionsHead {
+.topic {
+    margin-left: 10%;
+    padding-top: 7px;
+
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+}
+    
+.topicSpan {
+    color: #ff418d;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    font-size: 26px;
+}
+    
+.menu {
+    display: none;
+}
+    
+.threadsMenu {
+    margin-top: 185%;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 6%
+}
+
+.profileImg {
+    width: 150%;
+}
+
+.register1 {
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(94.02deg, #ff418d 12.9%, #ff0066 86.65%);
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.register1:hover {
+    cursor: pointer;
+    transition: 1s;
+    background: linear-gradient(94.02deg, #ff0066 12.9%, #ff418d 86.65%);
+}
+
+.btnTxt, .regisTxt {
+    font-weight: 600;
+    font-size: 15.5px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.navOptions {
+    display: none;
+}
+
+.navOptions1 {
+    display: flex;
+    align-items: center;
+    margin: auto 0 auto auto;
+}
+
+.navOption1 {
+    padding: 0 2rem;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+/*navBar ends*/
+
+/* hero */
+
+.hero {
+    display: flex;
+    margin: 6% 10%;
+}
+
+.heroTxt {
+    width: 50%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroTxtHead {
+    font-size: 75px;
+    display: block;
+}
+
+.heroTxtSpan {
+    color: #ff418d;
+    font-size: 90px;
+    letter-spacing: 1px;
+}
+
+.heroBanner {
+    width: 50%;
+    margin-left: 3%;
+}
+
+.bannerImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* search and clr btn */
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+    
+.searchBar {
+    width: 60%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px 0px 0px 50px;
+    border: 1px solid #ff418d;
+    color: #ff418d;
+    padding-left: 15px;
+}
+
+.searchBar::placeholder {
+    padding-left: 5px;
+}
+
+.searchBtn {
+    width: 3%;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    background-color: #ff418d;
+    padding-top: 5px;
+}
+
+/*select & filters*/
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 select {
     cursor: pointer;
-    font-weight: 800;
-    font-size: 1.1rem;
-    border: none;
-    color: #36393E;
-    padding: 1rem 0.1rem;
-    background-color: #D9D9D9;
+    font-size: 1rem;
+    padding: 0.4rem;
+    border: 1px solid;
+    border-radius: 50px;
+    width: 12%;
+    margin: 0 2%;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-align-last: center;
+    overflow-x: auto;
 }
 
 select:hover {
-    border: 1px solid;
-    color: #36393E;
-    background-color: #D9D9D9;
-    opacity: 0.7;
+    color: white;
+    background-color: #ff418d;
 }
+
+select option:checked {
+    background-color: #ff418d;
+    color: white;
+}
+
 
 option {
-    text-align: left;
-    border: none;
+    background-color: white;
+    color: black;
 }
 
-.searchBar {
-    width: 120.5%;
-    height: 100%;
-    padding: 0.6rem;
-    margin-bottom: 1.25rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px 0px 0px 5px;
-    background-color: #D9D9D9;
-    color: #36393E;
-    opacity: 0.8;
-}
+/* select ends */
 
-.searchBtn {
-    width: 17%;
-    height: 100%;
-    padding: 0.48rem;
-    margin-bottom: 1.25rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 0px 5px 5px 0px;
-    background-color: #D9D9D9;
-    color: #36393E;
-    font-weight: 750;
-}
-
-.clrBtn {
-    width: 100%;
-    height: 100%;
-    padding: 0.6rem;
-    margin-bottom: 1.25rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #D9D9D9;
-    color: #36393E;
-    font-weight: 750;
-    text-transform: uppercase;
-}
-
-.clrBtn:hover {
-    border: 1px solid;
-    color: #36393E;
-    background-color: #D9D9D9;
-    opacity: 0.7;
-}
+/* table formatting */
 
 .booksList {
     margin: 1% auto;
@@ -109,21 +246,23 @@ td {
 .thId, td {
     border: 1px solid;
     padding: 1rem;
-    color: #D9D9D9;
 }
 
 .thId:hover, td:hover {
     border: 1px solid;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #36393E;
-    background-color: #D9D9D9;
-    opacity: 0.7;
+    background-color: #ff418d;
+    color: white;
+    opacity: 0.8;
 }
 
 .tableHead {
     position: sticky;
+    top: 0;
+    background-color: #ff418d;
+    color: white;
+    z-index: 1;
 }
+
 
 /*filterDiv*/
 
@@ -132,3 +271,50 @@ td {
     display: flex;
     justify-content: end;
 }
+
+/* rowsClr */
+
+.rowsClr {
+    margin: 3% auto 2.75% auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count {
+    font-size: 1rem;
+    margin: 0 10px 0 auto;
+    opacity: 0.8;
+}
+
+.clrBtn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #ff418d;
+    color: white;
+    margin: 0 auto 0 1%;
+}
+
+.clrBtn:hover {
+    background-color: #ff0066;
+}
+
+/* hide mobile things */
+
+.navOptions {
+    display: none;
+}
+
+
+
+
+/* @media only screen and (min-width: 320px) {
+    
+} */

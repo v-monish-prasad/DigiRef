@@ -6,6 +6,16 @@ var rows = 0;
 
 const countElement = document.getElementById('count');
 
+var menu = document.getElementById("navOptions");
+
+function menuSlide() {
+    menu.style.display = "block"
+}
+
+function closeSlide() {
+    menu.style.display = "none"
+}
+
 //fetching data from backend
 fetch("dataBase.json")
   .then((res) => res.json())
@@ -90,13 +100,16 @@ function renderTable1(data) {
   
       tableBody.appendChild(row);
   }
-    countElement.textContent = `Displaying ${data.length} out of ${jsonData.length} books`;
+    countElement.textContent = `Displaying ${data.length}/${jsonData.length} books`;
   }
 
 var table = document.getElementById('table');
 
 table.addEventListener('scroll', () => {
-  if (globalFlag == true && table.scrollTop + table.clientHeight >= table.scrollHeight) {
+  console.log('scroll')
+  console.log(globalFlag, table.scrollTop, table.clientHeight, table.scrollHeight)
+  if (globalFlag == true && table.scrollTop + table.clientHeight >= table.scrollHeight - 1) {
+    console.log('if works')
     // fetch more data and render the table
     const start = localCounter;
     const stop = localCounter + stepSize;
@@ -159,7 +172,7 @@ function clearFilters() {
   subjectDropdown.selectedIndex = 0;
   publishDateDropdown.selectedIndex = 0;
 
-  countElement.textContent = ``;
+  countElement.textContent = `Displaying 60/${jsonData.length} books`;
   document.getElementById("search-input").value = '';
 
   // Trigger the filterData function to update the table with unfiltered all data

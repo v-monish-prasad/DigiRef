@@ -8,53 +8,79 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section style="height: 700px; overflow-y: auto;" id="table">
-         <table class="booksList">
+    <div class="nav">
+        <a href="index.html" class="logo">
+            <h1 class="topic">Digi<span class="topicSpan">Ref</span></h1>
+        </a>
+        <img src="assets\menu.svg" alt="menu" class="menu" onclick="menuSlide()">
+        <div class="navOptions" id="navOptions">
+            <img src="assets\exit.svg" alt="exit" class="exit" id="exit" onclick="closeSlide()">
+            <div class="mobileA">
+                <a href="#" class="navOption mobileA1">HOME</a>
+                <a href="#" class="navOption mobileA1">EVENTS</a>
+                <a href="#" class="navOption mobileA1">WORKSHOPS</a>
+                <a href="#" class="navOption mobileA1">REGISTER</a>
+                <a href="#" class="navOption mobileA1">DOWNLOAD ID</a>      
+            </div>
+            <div class="threadsMenu">
+                <img src="assets\logo.svg" alt="logo" class="logo menuLogo">
+                <h1 class=" topic threadsMenuTxt">THREADS'23.</h1>
+            </div>                 
+        </div>
+
+        <div class="navOptions1" id="navOptions">
+            <a href="#" class="navOption1">Home</a>
+            <a href="#" class="navOption1">About Us</a>
+            <a href="#" class="navOption1">Contact Us</a>   
+            <button class="register1" id="download">
+                <span class="btnTxt"><span class="regisTxt">Premium</span></span>
+            </button>
+            <a href="#" class="navOption1">
+                <img src="assets\profile.svg" alt="profileImg" class="profileImg">
+            </a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="heroTxt">
+            <h1 class="heroTxtHead">Digi<span class="heroTxtSpan">Ref</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facere reprehenderit dolorem excepturi vitae? Rem soluta vel quos exercitationem neque veniam suscipit? Officia consequatur at ab deserunt ducimus hic omnis.</p>
+        </div>
+        <div class="heroBanner">
+            <img src="assets\bg.webp" alt="" class="bannerImg">
+        </div>
+    </div>
+
+    <div class="search">
+        <input type="text" id="search-input" placeholder="Search for any book with it's Title/Author/Subject/Date..." class="searchBar">
+        <button id="search-btn" class="searchBtn">
+            <img src="assets\search.svg" alt="">
+        </button>
+    </div>
+
+    <div class="filters">
+        <select id="title">
+            <option value="" class="optionsHead">Filter Title</option>
+        </select>
+        <select id="author">
+            <option value="" class="optionsHead">Filter Author</option>
+        </select>
+        <select id="subject">
+            <option value="" class="optionsHead">Filter Subject</option>
+        </select>
+        <select id="publish-date">
+            <option value="" class="optionsHead">Filter Publish Date</option>
+        </select>
+    </div>
+
+    <div class="rowsClr">
+        <p id="count" class="count">Displaying 60/60 books</p>
+        <button id="clear-btn" class="clrBtn">Clear</button>
+    </div>
+
+    <section style="height: 625px; overflow-y: auto;" id="table">
+        <table class="booksList">
             <thead>
-                <tr>
-                    <th style="border: none;">
-                        
-                    </th>
-                    <th style="border: none;">
-                        <input type="text" id="search-input" placeholder="Search" class="searchBar">
-                    </th>
-                    <th style="border: none;">
-                        <button id="search-btn" class="searchBtn">
-                            <img src="assets\search.svg" alt="">
-                        </button>
-                    </th>
-                    <th style="border: none;">
-                        <p id="count" style="color: white"></p>
-                    </th>
-                    <th style="border: none; padding: 0; margin-bottom: 20px;">
-                        <button id="clear-btn" class="clrBtn">Clear</button>
-                    </th>
-                </tr>
-                <tr>
-                    <th class="thId1" style="background-color: #D9D9D9;">
-                        
-                    </th>
-                    <th>
-                        <select id="title">
-                            <option value="" class="optionsHead">Filter Title</option>
-                        </select>
-                    </th>
-                    <th class="selectHead">
-                        <select id="author">
-                            <option value="" class="optionsHead">Filter Author</option>
-                        </select>
-                    </th>
-                    <th class="selectHead">
-                        <select id="subject">
-                            <option value="" class="optionsHead">Filter Subject</option>
-                        </select>
-                    </th>
-                    <th class="selectHead">
-                        <select id="publish-date">
-                            <option value="" class="optionsHead">Filter Publish Date</option>
-                        </select>
-                    </th>
-                </tr>
                 <tr class="tableHead">
                     <th class="thId">
                         Book ID
@@ -75,7 +101,7 @@
             </thead>
             <tbody id="tableBody">
             </tbody>
-    </table>   
+        </table>   
     </section>
 
 
