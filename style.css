@@ -12,7 +12,8 @@ a {
 }
 
 #table {
-    margin: 0% 5% 15% 5%;
+    margin: 0% auto 15% auto    ;
+    width: 80%;
 }
 
 #table::-webkit-scrollbar {
@@ -230,8 +231,9 @@ option {
 /* table formatting */
 
 .booksList {
-    margin: 1% auto;
+    margin: 0 auto;
     border-collapse: collapse; /*to merge adjacent borders*/
+    width: 100%;
 }
 
 td {
