@@ -16,15 +16,15 @@
         <div class="navOptions" id="navOptions">
             <img src="assets\exit.svg" alt="exit" class="exit" id="exit" onclick="closeSlide()">
             <div class="mobileA">
-                <a href="#" class="navOption mobileA1">HOME</a>
-                <a href="#" class="navOption mobileA1">EVENTS</a>
-                <a href="#" class="navOption mobileA1">WORKSHOPS</a>
-                <a href="#" class="navOption mobileA1">REGISTER</a>
-                <a href="#" class="navOption mobileA1">DOWNLOAD ID</a>      
+                <a href="#hero" class="navOption mobileA1">HOME</a>
+                <a href="#about" class="navOption mobileA1">ABOUT US</a>
+                <a href="#footer" class="navOption mobileA1">CONTACT US</a> 
+                <button class="registerMob navOption mobileA1" id="download">
+                    <span class="btnTxt"><span class="regisTxtMob">Premium</span></span>
+                </button>
             </div>
             <div class="threadsMenu">
-                <img src="assets\logo.svg" alt="logo" class="logo menuLogo">
-                <h1 class=" topic threadsMenuTxt">THREADS'23.</h1>
+                <h1 class="threadsMenuTxt">DigiRef</h1>
             </div>                 
         </div>
 
@@ -49,28 +49,6 @@
         <div class="heroBanner">
             <img src="assets\bg.webp" alt="" class="bannerImg">
         </div>
-    </div>
-
-    <div class="search">
-        <input type="text" id="search-input" placeholder="Search for any book with it's Title/Author/Subject/Date..." class="searchBar">
-        <button id="search-btn" class="searchBtn">
-            <img src="assets\search.svg" alt="">
-        </button>
-    </div>
-
-    <div class="filters">
-        <select id="title">
-            <option value="" class="optionsHead">Filter Title</option>
-        </select>
-        <select id="author">
-            <option value="" class="optionsHead">Filter Author</option>
-        </select>
-        <select id="subject">
-            <option value="" class="optionsHead">Filter Subject</option>
-        </select>
-        <select id="publish-date">
-            <option value="" class="optionsHead">Filter Publish Date</option>
-        </select>
     </div>
 
     <div class="categories">
@@ -109,39 +87,61 @@
                 <p class="cardTxt">Photography</p>
             </div>
 
-            <div class="category">
+            <div class="category" onclick="filterData1('Education')">
                 <img src="assets\education.svg" alt="" class="cardImg">
                 <p class="cardTxt">Education</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('History')">
                 <img src="assets\history.svg" alt="" class="cardImg">
                 <p class="cardTxt">History</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Fiction')">
                 <img src="assets\fiction.svg" alt="" class="cardImg">
                 <p class="cardTxt">Fiction</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Biography')">
                 <img src="assets\bio.svg" alt="" class="cardImg">
                 <p class="cardTxt">Biography</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Economics')">
                 <img src="assets\economics.svg" alt="" class="cardImg">
                 <p class="cardTxt">Economics</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Law')">
                 <img src="assets\law.svg" alt="" class="cardImg">
                 <p class="cardTxt">Law</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Novel')">
                 <img src="assets\novel.svg" alt="" class="cardImg">
                 <p class="cardTxt">Novel</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Photography')">
                 <img src="assets\photo.svg" alt="" class="cardImg">
                 <p class="cardTxt">Photography</p>
             </div>
         </div> 
+    </div>
+
+    <div class="search">
+        <input type="text" id="search-input" placeholder="Search for any book with it's Title/Author/Subject/Date..." class="searchBar">
+        <button id="search-btn" class="searchBtn">
+            <img src="assets\search.svg" alt="">
+        </button>
+    </div>
+
+    <div class="filters">
+        <select id="title">
+            <option value="" class="optionsHead">Filter Title</option>
+        </select>
+        <select id="author">
+            <option value="" class="optionsHead">Filter Author</option>
+        </select>
+        <select id="subject">
+            <option value="" class="optionsHead">Filter Subject</option>
+        </select>
+        <select id="publish-date">
+            <option value="" class="optionsHead">Filter Publish Date</option>
+        </select>
     </div>
 
     <div class="rowsClr">
