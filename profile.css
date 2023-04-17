@@ -1,7 +1,7 @@
 .profileDashBoard {
     padding: 1rem;
     width: 80%;
-    margin: 2% auto;
+    margin: 2% auto 0 auto;
     /* background: #ff8cae; */
 }
 
@@ -95,7 +95,7 @@
         padding: 1rem;
         border-radius: 15px;
         width: 60%;
-        margin: 6.5% auto;
+        margin: 4% auto 2.5%;
         /* background: #ff8cae; */
     }
     
@@ -124,9 +124,14 @@
         width: 100%;
         border-radius: 15px;
     }
+
+    .name {
+        font-size: 1.5rem;
+    }
     
     .role {
         opacity: 0.8;
+        font-size: 1rem;
     }
     
     .profileDashRight {
@@ -174,5 +179,9 @@
 
     .detailsTxt {
         font-size: 0.8rem;
+    }
+
+    .media {
+
     }
 }
