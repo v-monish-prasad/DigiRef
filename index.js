@@ -1,3 +1,5 @@
+//var declarations
+
 var jsonData = [];
 var globalFlag = true;
 var localCounter = 10;
@@ -5,6 +7,8 @@ var stepSize = 10;
 var rows = 0;
 
 const countElement = document.getElementById('count');
+
+// mobile navbar
 
 var menu = document.getElementById("navOptions");
 
@@ -47,6 +51,7 @@ fetch("dataBase.json")
     });
   });
 
+//render intial table
   function renderTable(rows) {
     const tableBody = document.getElementById('tableBody');
     for (let i = 0; i < rows.length; i++) {
@@ -69,7 +74,11 @@ let originalData = [];
 
 // Add an event listener to the search button
 document.getElementById("search-btn").addEventListener("click", () => {
-  const searchInput = document.getElementById("search-input").value;
+  let searchInput = document.getElementById("search-input").value;
+  console.log(searchInput)
+  if(searchInput.endsWith(" ")) {
+    searchInput = searchInput.slice(0, -1);
+  }
   let filteredData = jsonData.filter((data) => {
     return Object.values(data).some((value) =>
     typeof value === 'string' && value.toLowerCase().includes(searchInput.toLowerCase())
@@ -78,7 +87,7 @@ document.getElementById("search-btn").addEventListener("click", () => {
   renderTable1(filteredData);
 });
 
-// Add an event listener to the search input field to handle Enter key press
+// to handle keyup event in search bar and mimic search button
 document.getElementById("search-input").addEventListener("keyup", (event) => {
   event.preventDefault();
   document.getElementById("search-btn").click();
@@ -143,22 +152,11 @@ function filterData() {
            (!subject || data.subject === subject) &&
            (!publishDate || data.publication_date === publishDate);
   });
-
-  // console.log(filteredData)
   
   renderTable1(filteredData);
 }
 
-//making cards functionala
-
-// document.getElementById('Education').addEventListener('click', filterData1('Education'));
-// document.getElementById('History').addEventListener('click', filterData1('History'));
-// document.getElementById('Fiction').addEventListener('click', filterData1('Fiction'));
-// document.getElementById('Biography').addEventListener('click', filterData1('Biography'));
-// document.getElementById('Economics').addEventListener('click', filterData1('Economics'));
-// document.getElementById('Law').addEventListener('click', filterData1('Law'));
-// document.getElementById('Novel').addEventListener('click', filterData1('Novel'));
-// document.getElementById('Photography').addEventListener('click', filterData1('Photography'));
+//making cards functional
 
 function filterData1(subject) {
   console.log('works')
@@ -169,15 +167,6 @@ function filterData1(subject) {
   renderTable1(filteredData);
 }
 
-// const card = document.querySelectorAll('.category');
-
-// console.log(card)
-
-// card.addEventListener('click', function() {
-//   const cardText = this.querySelector('.cardTxt').textContent;
-//   console.log(cardText);
-//   // Do something with the card text
-// });
 
 
 const uniqueValues = {
@@ -205,7 +194,7 @@ function clearFilters() {
   subjectDropdown.selectedIndex = 0;
   publishDateDropdown.selectedIndex = 0;
 
-  countElement.textContent = `Displaying 60/${jsonData.length} books`;
+  countElement.textContent = `Displaying 100/${jsonData.length} books`;
   document.getElementById("search-input").value = '';
 
   // Trigger the filterData function to update the table with unfiltered all data

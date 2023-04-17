@@ -347,7 +347,7 @@ body {
 .filters {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 1rem auto;
+    margin: 1rem auto 0.5rem auto;
     width: 90%;
     padding-bottom: 5%;
     border-bottom: 1px solid;
@@ -464,7 +464,7 @@ option {
 }
 
 .category {
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 15px;
     padding: 0.8rem;
     margin: 0 20px;
@@ -587,7 +587,7 @@ option {
 .enquiryFormHead {
     font-weight: 600;
     font-size: 1rem;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 15px;
     padding: 0.1rem;
     width: 40%;
@@ -627,7 +627,7 @@ option {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 15px;
     padding: 6px 5px 0px 5px;
     width: fit-content;
@@ -809,13 +809,18 @@ option {
     display: flex;
     align-items: center;
     margin: auto 0 auto auto;
+    text-transform: uppercase;
 }
 
 .navOption1 {
     padding: 0 2rem;
-    font-weight: 600;
+    font-weight: 550;
     font-size: 17px;
     line-height: 18px;
+}
+
+.navOption1:hover {
+    font-weight: 600;
 }
 
 /*navBar ends*/
@@ -1022,7 +1027,7 @@ option {
 
 .categoriesHead {
     margin: 0 0 3% 0;
-    font-size: 35px;
+    font-size: 1.8rem;
 }
 
 .categoryCards {

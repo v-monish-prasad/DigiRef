@@ -418,5 +418,285 @@
             "author": "Victor Hugo",
             "subject": "Historical Mythology",
             "publication_date": "24-02-2006"
-          }
+          },
+        {
+            "id": 61,
+            "title": "A Brief History of Time",
+            "author": "Stephen Hawking",
+            "subject": "Non-fiction",
+            "publication_date": "01-04-1988"
+        },
+        {
+            "id": 62,
+            "title": "The Picture of Dorian Gray",
+            "author": "Oscar Wilde",
+            "subject": "Fiction",
+            "publication_date": "20-06-1890"
+        },
+        {
+            "id": 63,
+            "title": "The Adventures of Sherlock Holmes",
+            "author": "Arthur Conan Doyle",
+            "subject": "Mystery",
+            "publication_date": "14-10-1892"
+        },
+        {
+            "id": 64,
+            "title": "The Diary of a Young Girl",
+            "author": "Anne Frank",
+            "subject": "Autobiography",
+            "publication_date": "25-06-1947"
+        },
+        {
+            "id": 65,
+            "title": "The Godfather",
+            "author": "Mario Puzo",
+            "subject": "Crime",
+            "publication_date": "10-03-1969"
+        },
+        {
+            "id": 66,
+            "title": "The Cat in the Hat",
+            "author": "Dr. Seuss",
+            "subject": "Children's literature",
+            "publication_date": "12-03-1957"
+        },
+        {
+            "id": 67,
+            "title": "1984",
+            "author": "George Orwell",
+            "subject": "Science fiction",
+            "publication_date": "08-06-1949"
+        },
+        {
+            "id": 68,
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "subject": "Romance",
+            "publication_date": "28-01-1813"
+        },
+        {
+            "id": 69,
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "subject": "Fiction",
+            "publication_date": "16-07-1951"
+        },
+        {
+            "id": 70,
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "subject": "Fiction",
+            "publication_date": "10-04-1925"
+        },
+        {
+            "id": 71,
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "subject": "Fiction",
+            "publication_date": "11-07-1960"
+        },
+        {
+            "id": 72,
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "subject": "Fantasy",
+            "publication_date": "21-09-1937"
+        },
+        {
+            "id": 73,
+            "title": "Moby-Dick",
+            "author": "Herman Melville",
+            "subject": "Adventure",
+            "publication_date": "18-10-1851"
+        },
+        {
+          "id": 74,
+          "title": "The Picture of Dorian Gray",
+          "author": "Oscar Wilde",
+          "subject": "Fiction",
+          "publication_date": "20-06-1890"
+        },
+        {
+          "id": 75,
+          "title": "The Adventures of Huckleberry Finn",
+          "author": "Mark Twain",
+          "subject": "Fiction",
+          "publication_date": "10-12-1884"
+        },
+        {
+          "id": 76,
+          "title": "The Hobbit",
+          "author": "J.R.R. Tolkien",
+          "subject": "Fantasy",
+          "publication_date": "21-09-1937"
+        },
+        {
+          "id": 77,
+          "title": "The Lord of the Rings",
+          "author": "J.R.R. Tolkien",
+          "subject": "Fantasy",
+          "publication_date": "29-07-1954"
+        },
+        {
+          "id": 78,
+          "title": "The Chronicles of Narnia",
+          "author": "C.S. Lewis",
+          "subject": "Fantasy",
+          "publication_date": "16-10-1950"
+        },
+        {
+          "id": 79,
+          "title": "The Catcher in the Rye",
+          "author": "J.D. Salinger",
+          "subject": "Fiction",
+          "publication_date": "16-07-1951"
+      },
+      {
+          "id": 80,
+          "title": "The Color Purple",
+          "author": "Alice Walker",
+          "subject": "Fiction",
+          "publication_date": "22-03-1982"
+      },
+      {
+          "id": 81,
+          "title": "The Picture of Dorian Gray",
+          "author": "Oscar Wilde",
+          "subject": "Fiction",
+          "publication_date": "20-06-1890"
+      },
+      {
+          "id": 82,
+          "title": "The Road",
+          "author": "Cormac McCarthy",
+          "subject": "Fiction",
+          "publication_date": "26-09-2006"
+      },
+      {
+          "id": 83,
+          "title": "The Bell Jar",
+          "author": "Sylvia Plath",
+          "subject": "Fiction",
+          "publication_date": "14-01-1963"
+      },
+      {
+          "id": 84,
+          "title": "A Thousand Splendid Suns",
+          "author": "Khaled Hosseini",
+          "subject": "Fiction",
+          "publication_date": "22-05-2007"
+      },
+      {
+          "id": 85,
+          "title": "To Kill a Mockingbird",
+          "author": "Harper Lee",
+          "subject": "Fiction",
+          "publication_date": "11-07-1960"
+      },
+      {
+          "id": 86,
+          "title": "Pride and Prejudice",
+          "author": "Jane Austen",
+          "subject": "Fiction",
+          "publication_date": "28-01-1813"
+      },
+      {
+          "id": 87,
+          "title": "1984",
+          "author": "George Orwell",
+          "subject": "Fiction",
+          "publication_date": "08-06-1949"
+      },
+      {
+          "id": 88,
+          "title": "Animal Farm",
+          "author": "George Orwell",
+          "subject": "Fiction",
+          "publication_date": "17-08-1945"
+      },
+      {
+          "id": 89,
+          "title": "Brave New World",
+          "author": "Aldous Huxley",
+          "subject": "Fiction",
+          "publication_date": "17-10-1932"
+      },
+      {
+          "id": 90,
+          "title": "One Hundred Years of Solitude",
+          "author": "Gabriel Garcia Marquez",
+          "subject": "Fiction",
+          "publication_date": "30-05-1967"
+      },
+      {
+          "id": 91,
+          "title": "The Adventures of Huckleberry Finn",
+          "author": "Mark Twain",
+          "subject": "Fiction",
+          "publication_date": "10-12-1884"
+      },
+      {
+          "id": 92,
+          "title": "Beloved",
+          "author": "Toni Morrison",
+          "subject": "Fiction",
+          "publication_date": "02-09-1987"
+      },
+      {
+          "id": 93,
+          "title": "Crime and Punishment",
+          "author": "Fyodor Dostoyevsky",
+          "subject": "Fiction",
+          "publication_date": "01-08-1866"
+      },
+      {
+        "id": 94,
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "subject": "Mystery",
+        "publication_date": "18-03-2003"
+      },
+      {
+        "id": 95,
+        "title": "Gone Girl",
+        "author": "Gillian Flynn",
+        "subject": "Mystery",
+        "publication_date": "24-05-2012"
+      },
+      {
+        "id": 96,
+        "title": "The Girl with the Dragon Tattoo",
+        "author": "Stieg Larsson",
+        "subject": "Mystery",
+        "publication_date": "19-08-2005"
+      },
+      {
+        "id": 97,
+        "title": "The Silence of the Lambs",
+        "author": "Thomas Harris",
+        "subject": "Thriller",
+        "publication_date": "05-05-1988"
+      },
+      {
+        "id": 98,
+        "title": "The Bourne Identity",
+        "author": "Robert Ludlum",
+        "subject": "Thriller",
+        "publication_date": "05-04-1980"
+      },
+      {
+        "id": 99,
+        "title": "The Hunt for Red October",
+        "author": "Tom Clancy",
+        "subject": "Thriller",
+        "publication_date": "01-10-1984"
+      },
+      {
+        "id": 100,
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "subject": "Fiction",
+        "publication_date": "01-01-1988"
+      }
 ]
