@@ -102,9 +102,6 @@ body {
     z-index: 1;
 }
 
-  
-  
-
 /* navbar starts */
 
 .nav {
@@ -457,11 +454,13 @@ option {
     width: fit-content;
     margin: 0 auto;
     animation: scroll 15s linear infinite;
+    scroll-behavior: smooth;   
+    scroll-snap-type: x mandatory;
 }
 
-.categoryCards:hover {
+/* .categoryCards:hover {
     animation-play-state: paused;
-}
+} */
 
 .category {
     border: 1px solid;
@@ -1036,6 +1035,9 @@ option {
     width: fit-content;
     margin: 0 auto;
     animation: scroll 15s linear infinite;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
 }
 
 .categoryCards:hover {

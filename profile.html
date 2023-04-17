@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | DigiRef</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html" class="logo">
+            <h1 class="topic">Digi<span class="topicSpan">Ref</span></h1>
+        </a>
+        <img src="assets\menu.svg" alt="menu" class="menu" onclick="menuSlide()">
+        <div class="navOptions" id="navOptions">
+            <img src="assets\exit.svg" alt="exit" class="exit" id="exit" onclick="closeSlide()">
+            <div class="mobileA">
+                <a href="#hero" class="navOption mobileA1">HOME</a>
+                <a href="#about" class="navOption mobileA1">ABOUT US</a>
+                <a href="#footer" class="navOption mobileA1">CONTACT US</a> 
+                <button class="registerMob navOption mobileA1" id="download">
+                    <span class="btnTxt"><span class="regisTxtMob">Premium</span></span>
+                </button>
+            </div>
+            <div class="threadsMenu">
+                <h1 class="threadsMenuTxt">DigiRef</h1>
+            </div>                 
+        </div>
+
+        <div class="navOptions1" id="navOptions">
+            <a href="index.html#hero" class="navOption1"><div class="navOption2">Home</div></a>
+            <a href="index.html#about" class="navOption1"><div class="navOption2">About Us</div></a>
+            <a href="index.html#footer" class="navOption1"><div class="navOption2">Contact Us</div></a>   
+            <button class="register1" id="download">
+                <span class="btnTxt"><span class="regisTxt">Premium</span></span>
+            </button>
+            <a href="profile.html" class="navOption1">
+                <img src="assets\profile.svg" alt="profileImg" class="profileImg">
+            </a>
+        </div>
+    </div>
+
+    <div class="profileDashBoard">
+        <h1 class="profileDashBoardHead">Profile Dashboard</h1>
+
+        <div class="profileDashContent">
+            <div class="profileDashImg">
+                <img src="assets\profilePic.jpg" alt="" class="profileImg1">
+                <h2 class="name">Monish Prasad V</h2>
+                <p class="role">Student</p>
+            </div>
+    
+            <div class="profileDashRight">
+                <div class="description">
+                    <h3 class="descHead">About</h3>
+                    <p class="desc">I am pursuing a Bachelor of Engineering in Computer Science and Engineering, with a strong passion for web development. I am driven to expand my knowledge and skills in this field, and I am always up for a challenge. In my free time, I enjoy staying active, exploring the outdoors, and learning about new topics.</p>
+                </div>
+                
+                <div class="details">
+                    <div class="detailsCont">
+                        <img src="assets\location.svg" alt="" class="detailsImg">
+                        <p class="detailsTxt">Salem, India</p>
+                    </div>
+                    <div class="detailsCont">
+                        <img src="assets\mail.svg" alt="" class="detailsImg">
+                        <p class="detailsTxt">monishprasadv@gmail.com</p>
+                    </div>
+                    <div class="detailsCont">
+                        <img src="assets\job.svg" alt="" class="detailsImg">
+                        <p class="detailsTxt">Student | Aspiring web developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
