@@ -107,7 +107,6 @@ var table = document.getElementById('table');
 
 table.addEventListener('scroll', () => {
   if (globalFlag == true && table.scrollTop + table.clientHeight >= table.scrollHeight - 1) {
-    console.log('if works')
     // fetch more data and render the table
     const start = localCounter;
     const stop = localCounter + stepSize;
