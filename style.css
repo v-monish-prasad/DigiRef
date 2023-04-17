@@ -241,8 +241,8 @@ body {
     text-align: center;
     justify-content: center;
     position: absolute;
-    bottom: 6%;
-    left: 22%;
+    bottom: 10%;
+    left: 28%;
 }
 
 .threadsMenuTxt:hover {
@@ -254,8 +254,8 @@ body {
     color: #ffffff;
     border: 1px solid white;
     border-radius: 15px;
-    padding: 0.5rem 1.5rem;
-    font-size: 20px;
+    padding: 0.2rem 1rem;
+    font-size: 18px;
     text-align: center;
 }
 
