@@ -484,8 +484,8 @@ option {
     border-radius: 15px;
     padding: 0.8rem;
     margin: 0 20px;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -494,8 +494,8 @@ option {
 }
 
 .category:hover {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     cursor: pointer;
     background-color: #ffeaf2;
 }
