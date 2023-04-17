@@ -265,31 +265,28 @@ body {
 
 .hero {
     display: flex;
-    margin: 6% 10%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
 }
 
 .heroTxt {
-    width: 50%;
-    margin-right: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 0.8rem;
 }
 
 .heroTxtHead {
-    font-size: 75px;
+    font-size: 2.5rem;
     display: block;
+    text-align: center;
 }
 
 .heroTxtSpan {
     color: #ff418d;
-    font-size: 90px;
+    font-size: 3rem;
     letter-spacing: 1px;
-}
-
-.heroBanner {
-    width: 50%;
-    margin-left: 3%;
 }
 
 .bannerImg {
@@ -814,7 +811,8 @@ option {
 
 .hero {
     display: flex;
-    margin: 6% 10%;
+    flex-direction: row;
+    margin: 5%;
 }
 
 .heroTxt {
@@ -828,6 +826,7 @@ option {
 .heroTxtHead {
     font-size: 75px;
     display: block;
+    text-align: left;
 }
 
 .heroTxtSpan {
@@ -838,7 +837,9 @@ option {
 
 .heroBanner {
     width: 50%;
-    margin-left: 3%;
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
 }
 
 .bannerImg {
