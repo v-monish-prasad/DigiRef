@@ -14,6 +14,7 @@ a {
 
 body {
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* table */
@@ -100,7 +101,7 @@ body {
 .topic {
     margin-left: 10%;
     padding-top: 7px;
-
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 25px;
     line-height: 25px;
@@ -268,6 +269,8 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 5%;
+    border-bottom: 1px solid;
+    padding-bottom: 10%;
 }
 
 .heroTxt {
@@ -281,6 +284,7 @@ body {
     font-size: 2.5rem;
     display: block;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .heroTxtSpan {
@@ -299,25 +303,24 @@ body {
 .search {
     display: flex;
     justify-content: center;
+    margin-top: 12%;
 }
     
 .searchBar {
-    width: 60%;
-    padding: 0.6rem;
+    width: 70%;
+    padding: 0.1rem;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 50px 0px 0px 50px;
     border: 1px solid #ff418d;
     color: #ff418d;
     padding-left: 15px;
+    font-size: 12px;
 }
 
-.searchBar::placeholder {
-    padding-left: 5px;
-}
 
 .searchBtn {
-    width: 3%;
+    width: 10%;
     cursor: pointer;
     border: none;
     border-radius: 0px 50px 50px 0px;
@@ -812,12 +815,12 @@ option {
 .hero {
     display: flex;
     flex-direction: row;
-    margin: 5%;
+    border-bottom: 1px solid;
+    padding-bottom: 5%;
 }
 
 .heroTxt {
-    width: 50%;
-    margin-right: 3%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -852,6 +855,7 @@ option {
 .search {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
     
 .searchBar {
@@ -998,7 +1002,7 @@ option {
 /* categories */
 
 .categories {
-    margin: 0 auto 5% auto;
+    margin: 4% auto 5% auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
