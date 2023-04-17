@@ -73,59 +73,38 @@
         </select>
     </div>
 
-    <div class="rowsClr">
-        <p id="count" class="count">Displaying 60/60 books</p>
-        <button id="clear-btn" class="clrBtn">Clear</button>
-    </div>
-
-    <div class="table-container" style="height: 500px; overflow-y: auto;" id="table">
-        <table class="booksList">
-          <thead>
-            <tr class="tableHead">
-              <th>Book ID</th>
-              <th>Title</th>
-              <th>Author</th>
-              <th>Subject</th>
-              <th>Publish Date</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody">
-          </tbody>
-        </table>
-    </div>
-      
     <div class="categories">
         <h1 class="categoriesHead">Pick your favorite category...</h1>
         <div class="categoryCards">
-            <div class="category">
+            <div class="category" onclick="filterData1('Education')">
                 <img src="assets\education.svg" alt="" class="cardImg">
                 <p class="cardTxt">Education</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('History')">
                 <img src="assets\history.svg" alt="" class="cardImg">
                 <p class="cardTxt">History</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Fiction')">
                 <img src="assets\fiction.svg" alt="" class="cardImg">
                 <p class="cardTxt">Fiction</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Biography')">
                 <img src="assets\bio.svg" alt="" class="cardImg">
                 <p class="cardTxt">Biography</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Economics')">
                 <img src="assets\economics.svg" alt="" class="cardImg">
                 <p class="cardTxt">Economics</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Law')">
                 <img src="assets\law.svg" alt="" class="cardImg">
                 <p class="cardTxt">Law</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Novel')">
                 <img src="assets\novel.svg" alt="" class="cardImg">
                 <p class="cardTxt">Novel</p>
             </div>
-            <div class="category">
+            <div class="category" onclick="filterData1('Photography')">
                 <img src="assets\photo.svg" alt="" class="cardImg">
                 <p class="cardTxt">Photography</p>
             </div>
@@ -163,6 +142,27 @@
                 <p class="cardTxt">Photography</p>
             </div>
         </div> 
+    </div>
+
+    <div class="rowsClr">
+        <p id="count" class="count">Displaying 60/60 books</p>
+        <button id="clear-btn" class="clrBtn">Clear</button>
+    </div>
+
+    <div class="table-container" style="height: 500px; overflow-y: auto;" id="table">
+        <table class="booksList">
+          <thead>
+            <tr class="tableHead">
+              <th>Book ID</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Subject</th>
+              <th>Publish Date</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
     </div>
       
     <div class="about" id="about">

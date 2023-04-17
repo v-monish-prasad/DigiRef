@@ -360,7 +360,7 @@ option {
 /* categories */
 
 .categories {
-    margin: 0 auto 5% auto;
+    margin: 5% auto;
     display: flex;
     justify-content: center;
     flex-direction: column;

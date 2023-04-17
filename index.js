@@ -132,6 +132,11 @@ function filterData() {
   const author = document.getElementById('author').value;
   const subject = document.getElementById('subject').value;
   const publishDate = document.getElementById('publish-date').value;
+
+  console.log(title)
+  console.log(author)
+  console.log(subject)
+  console.log(publishDate)
   
   let filteredData = jsonData.filter(data => {
     return (!title || data.title === title) &&
@@ -144,6 +149,37 @@ function filterData() {
   
   renderTable1(filteredData);
 }
+
+//making cards functionala
+
+// document.getElementById('Education').addEventListener('click', filterData1('Education'));
+// document.getElementById('History').addEventListener('click', filterData1('History'));
+// document.getElementById('Fiction').addEventListener('click', filterData1('Fiction'));
+// document.getElementById('Biography').addEventListener('click', filterData1('Biography'));
+// document.getElementById('Economics').addEventListener('click', filterData1('Economics'));
+// document.getElementById('Law').addEventListener('click', filterData1('Law'));
+// document.getElementById('Novel').addEventListener('click', filterData1('Novel'));
+// document.getElementById('Photography').addEventListener('click', filterData1('Photography'));
+
+function filterData1(subject) {
+  console.log('works')
+  let filteredData = jsonData.filter(data => {
+    return data.subject === subject;
+  });
+  
+  renderTable1(filteredData);
+}
+
+// const card = document.querySelectorAll('.category');
+
+// console.log(card)
+
+// card.addEventListener('click', function() {
+//   const cardText = this.querySelector('.cardTxt').textContent;
+//   console.log(cardText);
+//   // Do something with the card text
+// });
+
 
 const uniqueValues = {
   title: new Set(),
