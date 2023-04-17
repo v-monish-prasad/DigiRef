@@ -270,7 +270,7 @@ body {
     justify-content: center;
     margin: 5%;
     border-bottom: 1px solid;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .heroTxt {
@@ -303,7 +303,7 @@ body {
 .search {
     display: flex;
     justify-content: center;
-    margin-top: 12%;
+    margin-top: 7%;
 }
     
 .searchBar {
@@ -331,25 +331,30 @@ body {
 /*select & filters*/
 
 .filters {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem auto;
+    width: 90%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid;
 }
 
 select {
     cursor: pointer;
-    font-size: 1rem;
-    padding: 0.4rem;
+    font-size: 0.8rem;
+    padding: 0.2rem;
     border: 1px solid;
     border-radius: 50px;
-    width: 12%;
-    margin: 0 2%;
+    width: 85%;
+    margin: 5% auto;
     -webkit-appearance: none;
     appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
     text-align-last: center;
     overflow-x: auto;
+    display: flex;
+    justify-content: center;
 }
 
 select:hover {
@@ -457,7 +462,9 @@ option {
 }
 
 .categoriesHead {
-    margin-bottom: 3%;
+    margin: 0 5% 5% 5%;
+    font-size: 15px;
+    font-weight: 550;
 }
 
 .categoryCards {
@@ -475,10 +482,10 @@ option {
 .category {
     border: 2px solid;
     border-radius: 15px;
-    padding: 1rem;
-    margin: 0 50px;
-    width: 150px;
-    height: 150px;
+    padding: 0.8rem;
+    margin: 0 20px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -487,8 +494,8 @@ option {
 }
 
 .category:hover {
-    width: 200px;
-    height: 200px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     background-color: #ffeaf2;
 }
@@ -498,17 +505,17 @@ option {
 }
 
 .cardImg {
-    height: 75px;
-    width: 75px;
+    height: 30px;
+    width: 30px;
 }
 
 .cardTxt {
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 600;
     border-top: 1px solid;
     text-align: center;
-    width: 120px;
-    margin-top: 25px;
+    width: 60px;
+    margin-top: 10px;
 }
 
 @keyframes scroll {
@@ -1011,7 +1018,8 @@ option {
 }
 
 .categoriesHead {
-    margin-bottom: 3%;
+    margin: 0 0 3% 0;
+    font-size: 35px;
 }
 
 .categoryCards {
