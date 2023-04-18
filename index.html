@@ -6,15 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigitalRef</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- open graph tags for Search Engiene Optimization -->
+    <meta property="og:title" content="DigiRef Library Management">
+    <meta property="og:description" content="A library management system for organizing books and tracking borrowing records.">
+    <meta property="og:image" content="https://v-monish-prasad.github.io/DigiRef/images/og-image.png">
+    <meta property="og:url" content="https://v-monish-prasad.github.io/DigiRef/">
+    <meta property="og:type" content="website">
+
+    <!-- importing jquery for validation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
 </head>
 <body>
     <div class="nav">
         <a href="index.html" class="logo">
             <h1 class="topic">Digi<span class="topicSpan">Ref</span></h1>
         </a>
-        <img src="assets\menu.svg" alt="menu" class="menu" onclick="menuSlide()">
+        <img src="assets\menu.svg" alt="menu" class="menu" onclick="menuSlide()"> 
         <div class="navOptions" id="navOptions">
+            <!-- for closing and opening mobile navbar -->
             <img src="assets\exit.svg" alt="exit" class="exit" id="exit" onclick="closeSlide()">
+            <!-- mobile navoptions -->
             <div class="mobileA">
                 <a href="#hero" class="navOption mobileA1">HOME</a>
                 <a href="#about" class="navOption mobileA1">ABOUT US</a>
@@ -34,6 +48,7 @@
             </div>                 
         </div>
 
+        <!-- desktop navoptions -->
         <div class="navOptions1" id="navOptions">
             <a href="#hero" class="navOption1"><div class="navOption2">Home</div></a>
             <a href="#about" class="navOption1"><div class="navOption2">About Us</div></a>
@@ -47,16 +62,18 @@
         </div>
     </div>
 
+    <!-- hero -->
     <div class="hero" id="hero">
         <div class="heroBanner">
             <img src="assets\bg.svg" alt="" class="bannerImg">
         </div>
         <div class="heroTxt">
             <h1 class="heroTxtHead">Digi<span class="heroTxtSpan">Ref</span></h1>
-            <p>Welcome to DigiRef, your go-to destination for managing your library's book collection. With our cutting-edge library management system, you can easily access the availability data for any book in your collection, making it simpler than ever to manage your inventory. From the latest bestsellers to timeless classics, DigiRef has got you covered.</p>
+            <p>Welcome to DigiRef, your go-to destination for managing your library's book collection. With our cutting-edge library management system, you can easily access the availability data for any book in our collection, making it simpler than ever to manage your inventory. From the latest bestsellers to timeless classics, DigiRef has got you covered.</p>
         </div>
     </div>
 
+    <!-- search section -->
     <div class="search">
         <input type="text" id="search-input" placeholder="Search for any book with it's Title/Author/Subject/Date..." class="searchBar">
         <button id="search-btn" class="searchBtn">
@@ -64,6 +81,7 @@
         </button>
     </div>
 
+    <!-- filter section -->
     <div class="filters">
         <select id="title">
             <option value="" class="optionsHead">Filter Title</option>
@@ -79,6 +97,7 @@
         </select>
     </div>
 
+    <!-- category scrolling cards -->
     <div class="categories">
         <h1 class="categoriesHead">Pick your favorite category...</h1>
         <div class="categoryCards">
@@ -150,6 +169,7 @@
         </div> 
     </div>
 
+    <!-- dynamic number of rows and clear button -->
     <div class="rowsClr">
         <p id="count" class="count">Displaying 100/100 books</p>
         <button id="clear-btn" class="clrBtn">Clear</button>
@@ -171,16 +191,18 @@
         </table>
     </div>
       
+    <!-- about -->
     <div class="about" id="about">
         <img src="assets\aboutBg.svg" alt="" class="aboutBg">
         <h1>What we actually do?</h1>
-        <p>DigiRef is an online library management system that provides features for managing a library's book collection, displaying book availability, and filtering books based on different criteria. It is designed to be accessed and used online, but it also has the capability to manage an offline library. With DigiRef, library patrons can easily search for and find the books they need, while librarians can efficiently manage and organize their collections. DigiRef helps to streamline the library experience for everyone involved.</p>
+        <p>DigiRef is an online library management system that provides features for managing a library's/person's book collection, displaying book availability, and filtering books based on different criteria. It is designed to be accessed and used online, but it also has the capability to manage an offline library. With DigiRef, library patrons can easily search for and find the books they need, while librarians can efficiently manage and organize their collections. DigiRef helps to streamline the library experience for everyone involved.</p>
     </div>
 
+    <!-- footer -->
     <div class="footer" id="footer">
         <div class="mapForm">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125042.34611177735!2d78.05589529644715!3d11.653723377514261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1681654223802!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-            <div class="enquiryForm">
+            <div class="enquiryForm" id="enquiryForm">
                 <h1 class="enquiryFormHead">Contact Us</h1>
                 <form action="mailto:monishprasad2018@gmail.com" method="post" enctype="text/plain">
                     <input type="text" placeholder="Name" name="name" class="inputBar">
@@ -192,6 +214,7 @@
             </div>
         </div>
         
+        <!-- media links -->
         <div class="media">
             <a href="https://www.linkedin.com/in/v-monish-prasad/">
                 <img src="assets\linkedin.svg" alt="" class="mediaImg">

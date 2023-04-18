@@ -8,7 +8,7 @@ var rows = 0;
 
 const countElement = document.getElementById('count');
 
-// mobile navbar
+// mobile navbar hide and display
 
 var menu = document.getElementById("navOptions");
 
@@ -20,14 +20,14 @@ function closeSlide() {
     menu.style.display = "none"
 }
 
-//fetching data from backend
+//fetching data from .json
 fetch("dataBase.json")
   .then((res) => res.json())
   .then((json) => {
     jsonData = json;
-    renderTable(jsonData.slice(0, stepSize)); // render the first set of rows
+    renderTable(jsonData.slice(0, stepSize)); // rendering the first 10 rows
 
-    // Get unique values for each dropdown menu
+    // Getting all possible unique values for each select
     jsonData.forEach((book) => {
       uniqueValues.title.add(book.title);
       uniqueValues.author.add(book.author);
@@ -35,7 +35,7 @@ fetch("dataBase.json")
       uniqueValues.publication_date.add(book.publication_date);
     });
 
-    // Populate the dropdown menus with unique values
+    // Populating the dropdown menus with unique values
     const titleDropdown = document.getElementById("title");
     const authorDropdown = document.getElementById("author");
     const subjectDropdown = document.getElementById("subject");
@@ -51,7 +51,7 @@ fetch("dataBase.json")
     });
   });
 
-//render intial table
+//rendering intial table
   function renderTable(rows) {
     const tableBody = document.getElementById('tableBody');
     for (let i = 0; i < rows.length; i++) {
@@ -72,13 +72,16 @@ fetch("dataBase.json")
 // Define a variable to store the original data
 let originalData = [];
 
-// Add an event listener to the search button
+// Adding an event listener to the search button
 document.getElementById("search-btn").addEventListener("click", () => {
   let searchInput = document.getElementById("search-input").value;
   console.log(searchInput)
+
+  // code to avoid last space
   if(searchInput.endsWith(" ")) {
     searchInput = searchInput.slice(0, -1);
   }
+
   let filteredData = jsonData.filter((data) => {
     return Object.values(data).some((value) =>
     typeof value === 'string' && value.toLowerCase().includes(searchInput.toLowerCase())
@@ -94,6 +97,7 @@ document.getElementById("search-input").addEventListener("keyup", (event) => {
 });
 
 
+// to render filtered entries
 function renderTable1(data) {
   const tableBody = document.getElementById('tableBody');
     tableBody.innerHTML = '';
@@ -114,6 +118,7 @@ function renderTable1(data) {
 
 var table = document.getElementById('table');
 
+//load on scroll (10 rows)
 table.addEventListener('scroll', () => {
   if (globalFlag == true && table.scrollTop + table.clientHeight >= table.scrollHeight - 1) {
     // fetch more data and render the table
@@ -128,7 +133,7 @@ table.addEventListener('scroll', () => {
   }
 });
 
-// trial code for filtering
+//filtering based on selected atrributed
 
 document.getElementById('title').addEventListener('change', filterData);
 document.getElementById('author').addEventListener('change', filterData);
@@ -159,15 +164,12 @@ function filterData() {
 //making cards functional
 
 function filterData1(subject) {
-  console.log('works')
   let filteredData = jsonData.filter(data => {
     return data.subject === subject;
   });
   
   renderTable1(filteredData);
 }
-
-
 
 const uniqueValues = {
   title: new Set(),
@@ -176,19 +178,19 @@ const uniqueValues = {
   publication_date: new Set(),
 };
 
-// Add this event listener to your JavaScript code
+// catching click from clear button
 document.getElementById("clear-btn").addEventListener("click", clearFilters);
 
 function clearFilters() {
   const tableBody = document.getElementById('tableBody');
   tableBody.innerHTML = '';
-  // Get references to the dropdown menus
+  
   const titleDropdown = document.getElementById("title");
   const authorDropdown = document.getElementById("author");
   const subjectDropdown = document.getElementById("subject");
   const publishDateDropdown = document.getElementById("publish-date");
 
-  // Reset the selected values of the dropdown menus to their default values
+  // Resetting the values of the dropdown menus to their default values
   titleDropdown.selectedIndex = 0;
   authorDropdown.selectedIndex = 0;
   subjectDropdown.selectedIndex = 0;
@@ -197,6 +199,32 @@ function clearFilters() {
   countElement.textContent = `Displaying 100/${jsonData.length} books`;
   document.getElementById("search-input").value = '';
 
-  // Trigger the filterData function to update the table with unfiltered all data
+  // Trigger the filterData function to update the table with all data
   renderTable(jsonData.slice(0, localCounter));
 }
+
+
+//to validate the form and to make it a bit more secure
+  $(document).ready(function() {
+    $('#enquiryForm').validate({
+      rules: {
+        name: 'required',
+        email: {
+          required: true,
+          email: true
+        },
+        message: 'required'
+      },
+      messages: {
+        name: 'Please enter your name',
+        email: {
+          required: 'Please enter your email',
+          email: 'Please enter a valid email address'
+        },
+        message: 'Please enter your message'
+      },
+      submitHandler: function(form) {
+        form.submit();
+      }
+    });
+  });
