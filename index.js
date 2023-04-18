@@ -202,29 +202,3 @@ function clearFilters() {
   // Trigger the filterData function to update the table with all data
   renderTable(jsonData.slice(0, localCounter));
 }
-
-
-//to validate the form and to make it a bit more secure
-  $(document).ready(function() {
-    $('#enquiryForm').validate({
-      rules: {
-        name: 'required',
-        email: {
-          required: true,
-          email: true
-        },
-        message: 'required'
-      },
-      messages: {
-        name: 'Please enter your name',
-        email: {
-          required: 'Please enter your email',
-          email: 'Please enter a valid email address'
-        },
-        message: 'Please enter your message'
-      },
-      submitHandler: function(form) {
-        form.submit();
-      }
-    });
-  });
